@@ -1,0 +1,38 @@
+<div class="d-flex flex-column vh-100">
+
+  <nav class="navbar navbar-expand-lg navbar-dark px-3" role="navigation" style="background-color: darkcyan;">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </nav>
+
+<div class="d-flex flex-row  " style="overflow-y: auto;">
+
+  <aside class="side-panel d-flex p-3 flex-column" style="background-color: beige;">
+    <h1>Side bar</h1>
+    <ul class="list-group p-2">
+      <li class="list-group-item"><a href="#">Menu Item 1</a></li>
+      <li class="list-group-item"><a href="#">Menu Item 2</a></li>
+      <li class="list-group-item"><a href="#">Menu Item 3</a></li>
+    </ul>
+  </aside>
+
+  <div class="d-flex flex-column flex-fill"  style="overflow-y: auto;">
+    <section class="d-flex flex-column p-3 position-relative" style="background-color:darksalmon;">
+      <h1 class="mb-0">Filters</h1>
+      <button class="btn btn-link text-white position-absolute top-0 end-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#filtersSection" aria-expanded="true" aria-controls="filtersSection">
+      Toggle
+      </button>
+      <div id="filtersSection" class="collapse show mt-3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <div>
+        <button class="btn btn-primary">Apply</button>
+      </div>
+      </div>
+    </section>
+    <h3 class="mb-0 p-3">Details of top 30 cars in the world </h3>
+    <div class="d-flex flex-column p-3 pt-0" style="overflow-y: auto;">
+    
+      <app-table class="w-100"></app-table>
+    </div>
+  </div>
+  </div>
+</div>
